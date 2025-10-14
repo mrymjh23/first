@@ -1,0 +1,24 @@
+.logo-wrapper {
+    background-color: transparent;
+}
+
+.logo-shape {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 20% 50% 30% 50%;
+    background: linear-gradient(135deg, #6f42c1, #d4af37);
+    box-shadow: 0 0 15px rgba(111, 66, 193, 0.3);
+    position: relative;
+}
+
+.logo-letter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}

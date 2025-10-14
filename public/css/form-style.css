@@ -1,0 +1,26 @@
+body {
+    direction: rtl;
+    background: linear-gradient(to bottom, #ffffff, #f3e8ff);
+    font-family: 'Vazirmatn', 'Segoe UI', sans-serif;
+}
+
+.form-wrapper {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(160, 100, 255, 0.1);
+}
+
+.btn-sm {
+    font-size: 1rem;
+    border-radius: 6px;
+}
+/*.btn-purpl {*/
+/*    background-color: #6f42c1; !* بنفش Bootstrap *!*/
+/*    color: #6f42c1;*/
+/*    border-radius: 6px;*/
+/*}*/
+
+
