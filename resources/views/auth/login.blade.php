@@ -33,7 +33,7 @@
 
 
         <div class="d-flex justify-content-between m-5">
-            <button type="submit" class="btn w-50 btn-outline-primary">ورود</button><br>
+            <button type="submit" class="btn mx-2 w-50 btn-outline-primary">ورود</button><br>
             <a href="{{route('register')}}" class="btn btn-outline-secondary">ثبت نام</a>
         </div>
             <div class="mb-5">

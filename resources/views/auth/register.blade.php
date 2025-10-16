@@ -50,7 +50,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label">تأیید رمز عبور</label>
+                        <label class="form-label">تکرار رمز عبور</label>
                         <input id="confirm" type="password" class="form-control" name="password_confirmation"
                                required autocomplete="password">
                     </div>
