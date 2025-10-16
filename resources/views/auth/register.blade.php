@@ -30,6 +30,16 @@
                     </div>
 
                     <div class="mb-3">
+                        <label class="form-label">موبایل</label>
+                        <input id="mobile" type="text" class="form-control @error('mobile') is-invalid @enderror" name="mobile" value="{{ old('mobile') }}" required autocomplete="mobile">
+                        @error('mobile')
+                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                        @enderror
+                    </div>
+
+                    <div class="mb-3">
                         <label class="form-label">رمز عبور</label>
                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
                         @error('password')
