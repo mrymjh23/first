@@ -224,14 +224,15 @@
                 style="color: #000248;display: block;font-size: 18px;font-weight: 600;">Laurine T. Ebbert</span><span
                 style="color: #52526C; display: block; font-size: 14px; padding-top: 5px;">( Designer )</span></td>
 {{--        display: flex;--}}
-        <td><span style=" justify-content: end; gap: 15px;"><a
+        <td><span style=" justify-content: end; gap: 15px;">
+                <a
                     style="background: rgba(115, 102, 255, 1); color:rgba(255, 255, 255, 1);border-radius: 10px;padding: 18px 27px;font-size: 16px;font-weight: 600;outline: 0;border: 0; text-decoration: none;"
                     href="#!" onclick="window.print();">Print Invoice<i class="icon-arrow-right"
                                                                         style="font-size:13px;font-weight:bold; margin-left: 10px;"></i></a>
-                <a href="{{ route('down', ['file' => 'Invoice']) }}" class="btn btn-primary"
-                >دانلود PDF</a>
-                </span>
-        </td>
+               <a  style="background: rgba(115, 102, 255, 0.1);color: rgba(115, 102, 255, 1);border-radius: 10px;padding: 18px 27px;font-size: 16px;font-weight: 600;outline: 0;border: 0; text-decoration: none;"
+                    href="{{ route('down', ['file' => "invoice"]) }}" download="">Download PDF<i class="icon-arrow-right" style="font-size:13px;font-weight:bold; margin-left: 10px;"></i>
+                </a>
+                </span></td>
     </tr>
     </tbody>
 </table>
@@ -239,17 +240,13 @@
 </html>
 
 
-{{--<a--}}
-{{--    style="background: rgba(115, 102, 255, 0.1);color: rgba(115, 102, 255, 1);border-radius: 10px;padding: 18px 27px;font-size: 16px;font-weight: 600;outline: 0;border: 0; text-decoration: none;"--}}
-{{--    href="{{ route('down', ['file' => "invoice"]) }}" download="">Download PDF<i class="icon-arrow-right"--}}
-{{--                                                                                 style="font-size:13px;font-weight:bold; margin-left: 10px;">--}}
-{{--    </i>--}}
-{{--</a>--}}
 
 
 
 
 
+{{--<a href="{{ route('down', ['file' => 'Invoice']) }}" class="btn btn-primary"--}}
+{{-->دانلود PDF</a>--}}
 
 
 
