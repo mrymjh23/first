@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
-
-use App\Http\Controllers\Controller;
+namespace Modules\User\Http\Controllers\Auth;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class LoginController extends Controller
 {
@@ -37,4 +37,23 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
         $this->middleware('auth')->only('logout');
     }
+
+    public function username()
+    {
+        return 'login';
+    }
+    protected function credentials(Request $request)
+    {
+        $username=$request->get($this->username());
+        $field= filter_var($username, FILTER_VALIDATE_EMAIL)?'email':'mobile';
+        return [
+            $field => $username,
+            'password' => $request->password
+        ];
+    }
+    public function showLoginForm()
+    {
+        return view('User::auth.login');
+    }
+
 }

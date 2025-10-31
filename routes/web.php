@@ -6,7 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -15,3 +14,5 @@ Route::get('/Invoice',function (){
 });
 
 Route::get('/down/file/{file}',[\App\Http\Controllers\down::class,'down'] )->name('down');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
