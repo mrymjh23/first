@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Modules\User\Http\Controllers\Auth\ConfirmPasswordController;
 use Modules\User\Http\Controllers\Auth\ForgotPasswordController;
